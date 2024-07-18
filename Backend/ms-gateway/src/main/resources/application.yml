@@ -1,0 +1,54 @@
+server:
+  port: 8090
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:5173"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        - id: ms-users
+          uri: lb://ms-users
+          predicates:
+            - Path=/api/user/**
+          filters:
+            - StripPrefix=2
+        - id: ms-ticket
+          uri: lb://ms-ticket
+          predicates:
+            - Path=/api/ticket/**
+          filters:
+            - StripPrefix=2
+        - id: ms-place
+          uri: lb://ms-place
+          predicates:
+            - Path=/api/place/**
+          filters:
+            - StripPrefix=2
+        - id: ms-events
+          uri: lb://ms-events
+          predicates:
+            - Path=/api/events/**
+          filters:
+            - StripPrefix=2
+

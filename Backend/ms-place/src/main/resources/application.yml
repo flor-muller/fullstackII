@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: ms-place
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/ticketreck
+#    username: root
+#    password: contra
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+  datasource:
+    url: jdbc:mysql://ticketreck-db-mysql.cf4gakmqo0vw.us-east-1.rds.amazonaws.com:3306/ticketreckDB
+    username: admin
+    password: xWwbbN9sYkKlLJJb6jz5
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://54.211.227.50:8080/realms/ticketrek
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8084

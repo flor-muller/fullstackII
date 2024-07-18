@@ -1,0 +1,37 @@
+.event-form {
+    margin-top: 5%;
+    display: inline-grid;
+    position: relative;
+    top: 20%;
+    background-color: #ffffff;
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container{
+    margin-top: 5%;
+  }
+
+  .css-sghohy-MuiButtonBase-root-MuiButton-root{
+    background-color:#4e45bc !important ;
+  }
+
+  .button-container{
+    display: flex;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    justify-content: flex-end;
+  }
+
+  .css-i4bv87-MuiSvgIcon-root {
+    color: #4E45BC !important;
+  }
+
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

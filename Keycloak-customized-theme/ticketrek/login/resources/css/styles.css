@@ -1,0 +1,36 @@
+:root {
+    --pf-global--primary-color--100: #C4125A;
+    --pf-global--primary-color--200: #9F013B;
+    --pf-global--primary-color--dark-100: #9F013B;
+    --pf-global--link-Color--dark: #9F013B;
+    --pf-global--link-color--dark--hover: #5d0526;
+}
+
+.login-pf {
+    background: none;
+}
+
+.login-pf body {
+    background: url("../img/keycloak-bg.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+
+#kc-header-wrapper {
+    font-size: 0;
+    background-image: url("../img/keycloak-logo-text.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 100px;
+    width: 300px;
+}
+
+a {
+    color:#c8346f;
+}
+
+a:hover {
+    color:#9F013B;;
+}

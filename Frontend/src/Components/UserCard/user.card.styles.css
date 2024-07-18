@@ -1,0 +1,54 @@
+.toast-container-center-user {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    width: auto; 
+}
+  
+.container-profile {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card-profile-flyer{
+    width: 350px;
+    height: 450px;
+    background-image: url('../../assets/image_profile.png');
+    background-size: cover;
+}
+
+.card-profile { 
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    width: 350px;
+}
+
+.card-profile-image {
+    background-image: url('../../assets/user-card-bkg.png');
+    background-size: cover;
+    height: 193px;
+}
+
+.card-profile-text { 
+    background-color: #F3F3F3;
+    padding-bottom: 1rem;
+}
+
+.card-title-profile {
+    padding: 1rem;
+    color: #2575fc;
+    font-size: 2rem;
+}
+
+.card-text-profile {
+    text-align: left;
+    color: rgb(141, 139, 139);
+    padding: 0.5rem;
+    padding-left: 1rem;
+}

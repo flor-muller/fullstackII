@@ -1,0 +1,20 @@
+.card-profile-edit-image {
+    background-image: url('../../assets/user-card-bkg.png');
+    background-size: cover;
+    height: 100px;
+}
+
+.card-profile-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #F3F3F3;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.card-title-profile-edit {
+    padding: 1rem 1rem 0 1rem;
+    color: #2575fc;
+    font-size: 2rem;
+}

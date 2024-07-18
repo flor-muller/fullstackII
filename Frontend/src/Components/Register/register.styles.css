@@ -1,0 +1,32 @@
+.register-container {
+    background-color: black;
+    height: calc(100vh - 80px); 
+  }
+  
+  .register-header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: inline-grid;
+    position: relative;
+    top: 20%;
+    background-color: #ffffff;
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }

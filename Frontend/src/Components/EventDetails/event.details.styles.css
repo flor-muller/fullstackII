@@ -1,0 +1,252 @@
+.main-event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0px 150px
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 30px;
+    height: 100px;
+    padding-top: 10PX;
+}
+
+.location{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.location h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title {
+    width: 40%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 0.8;
+}
+
+.title h4 {
+    display: flex;
+    align-items: center;
+}
+
+
+.location-item p {
+    margin-left: 10px;
+    line-height: 0.3;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.main-details {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    text-align: left;
+}
+
+.tickets, .banner {
+    max-width: 40%;
+}
+
+.banner img {
+    width: 100%;
+    min-height: 500px;
+    max-height: 1000px;
+    object-fit: cover;
+}
+
+.ticket-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket-grid-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.type-column {
+    width: 70%; /* Ticket type column occupies 70% */
+}
+
+.price-column, .quantity-column {
+    width: 15%; /* Price and quantity columns each occupy 15% */
+    text-align: center;
+}
+
+.types-data {
+    width: 100%;
+}
+
+.ticket-grid-row {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the container */
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    max-height: 200px;
+}
+
+.quantity {
+    height: 1.5em;
+}
+
+
+.type {
+    width: 70%;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    padding-right: 20px;
+}
+
+.price, .quantity {
+    width: 15%;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: center;
+}
+
+
+.price p{
+    margin-top: 0;
+}
+
+.description {
+    margin-top: 70px;
+    line-height: 1;
+}
+
+.ticket-grid-row .type h4 {
+    margin: 0; /* Remove default margin for h4 */
+}
+
+
+.soldout-message {
+    color: red;
+    font-size: small;
+    margin: 0;
+}
+
+.ticket-description {
+    display: flex;
+}
+
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 28px 56px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+
+.selected-ticket-types {
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-ticket-type, .selected-ticket-type-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    line-height: 0.5;
+    border-bottom: 1px solid #ccc;
+}
+
+#ticket-header {
+    font-weight: bold;
+}
+
+.total-div {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.payment-methods {
+    margin: 30px 0px;
+    text-align: left;
+}
+
+
+.close-button {
+    background-color: #f1f1f1;
+    color: #4e45bc;
+    border-color: #4e45bc;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Roboto';
+  }
+  
+  .close-button:hover {
+    cursor: pointer;
+    background-color: #4e45bc;
+    color: #f1f1f1;
+  }
+
+.loading-div, .error-div {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

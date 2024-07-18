@@ -1,0 +1,30 @@
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 80px;
+    background-color:white;
+    align-content: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  }
+
+  .header-options {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 25px;
+    align-items: center;
+  }
+
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+    color: #4E45BC !important;
+    text-transform: capitalize !important;
+  }
+
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover{
+    background-color: rgba(78, 69, 188, 0.3) !important;
+  }

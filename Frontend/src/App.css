@@ -1,0 +1,14 @@
+#root {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h3{
+  margin: 0;
+}

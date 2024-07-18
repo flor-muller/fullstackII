@@ -1,0 +1,49 @@
+{
+  "name": "integrador_g6",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15.20",
+    "@mui/x-date-pickers": "^7.7.0",
+    "axios": "^1.7.2",
+    "babel-polyfill": "^6.26.0",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.11",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "keycloak-js": "^24.0.4",
+    "oidc-client": "^1.11.5",
+    "oidc-react": "^3.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.23.1",
+    "react-router-dom": "^6.23.1",
+    "react-scroll": "^1.9.0",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^10.0.5",
+    "sweetalert": "^2.1.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}

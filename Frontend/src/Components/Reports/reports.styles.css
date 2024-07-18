@@ -1,0 +1,58 @@
+.report-section{
+    min-height: 520px;
+}
+
+.button-section{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.button-download-section{
+    display: flex;
+    gap: 25px;
+    justify-content: end;
+    margin-top: 25px;
+    margin-right: 40px;
+}
+
+.form-section{
+    padding-top: 30px;
+}
+
+.card-report-action-container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.report-card-actions {
+    width: 250px;
+    height: 150px;
+    gap: 20px;
+    text-align: center;
+    color: #4e45bc !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); 
+    cursor: default !important
+}
+
+.card-report-action-item{
+    font-size: 25px;
+}
+
+.report-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.no-tickets-message {
+    color: #2575fc;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 40px;
+}
